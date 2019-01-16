@@ -1,0 +1,97 @@
+html {
+  max-width: 200vh;
+}
+
+.jumbotron.welcome-screen {
+  background-color: white;
+}
+
+.jumbotron.welcome-screen .content {
+  margin-top: 30px;
+  border: 2px solid #61b861;
+  border-radius: 15px;
+}
+
+.jumbotron.welcome-screen .content img {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.jumbotron.welcome-screen .content img:hover {
+  width: 200px;
+  height: 200px;
+  transition: 0.2s;
+}
+
+body .body-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+body .body-content-wrapper header {
+  height: 100vh;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #61b861;
+  border-radius: 5px;
+}
+
+nav .navbar-item a.active {
+  background-color: #86d886;
+  color: white !important;
+}
+
+header .search-field input {
+  height: 6vh;
+}
+
+header .search-field .form-group {
+  margin: 0;
+}
+
+body .body-content-wrapper header nav .navbar-item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+body .body-content-wrapper header .navbar-item a {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+  border: 1px solid #dadada;
+  width: 100%;
+  height: 23vh;
+}
+
+body .body-content-wrapper header .navbar-item a h3 {
+  font-size: 1.5em;
+  padding: 0 20px;
+}
+
+body .body-content-wrapper header .navbar-item a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+body .body-content-wrapper header nav .navbar-item img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+body .body-content-wrapper main {
+  flex: 5;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
