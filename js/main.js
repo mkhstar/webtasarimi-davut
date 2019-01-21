@@ -54,16 +54,13 @@ if (icons) {
 
 function bringTopic(alt) {
   let topicObject = window.donanimlar[topic][alt];
-
   if (topicObject === undefined) {
-    lessonInfoContent.style.display = "flex";
-    lessonInfoContent.innerHTML = "<h1 style='justify-content:center; align-items:center;align-content:center; align-self:center;'>Bu konuda böyle bir bileşeni bulunamadı... </h1>";
+    alert('Bileşen bulunamadı... ');
   } else {
+    iframeVideo.src = topicObject.iframeSrc;
     lessonInfoContent.innerHTML = topicObject.innerHtml;
     $(lessonInfoContent).hide().fadeIn(500);
-    iframeVideo.src = topicObject.iframeSrc;
   }
-
 }
 
 function bringEtkinlik(btn, number) {
@@ -85,9 +82,6 @@ function changeGirisCikis(e, topic) {
 }
 document.querySelector('.search-field form').addEventListener('submit', e => {
   e.preventDefault();
-  if (!$('main').hasClass('closed')) {
-    $('main').addClass('closed').hide().slideDown(1000);
-  }
   bringTopicSearch(e.target.querySelector('input').value);
 });
 
@@ -105,7 +99,6 @@ function bringTopicSearch(value) {
     })
   });
   if (result === undefined) {
-    lessonInfoContent.style.display = "flex";
-    lessonInfoContent.innerHTML = "<h1 style='justify-content:center; align-items:center;align-content:center; align-self:center;'>Bu konuda böyle bir bileşeni bulunamadı... </h1>";
+    alert('Bileşen bulunamadı... ');
   }
 }

@@ -340,7 +340,7 @@ var donanimlar = {
           </p>
           <div class="btn-group-action">
               <button onclick="bringTopic('hariciDepolama')" class="btn btn-success">&lt; Önceki Birim</button>
-              <button onclick="bringTopic('haparlor')" class="btn btn-success">Sonraki Birim &gt;</button>
+              <button onclick="bringTopic('hoparlor')" class="btn btn-success">Sonraki Birim &gt;</button>
           </div>
         </div>
         <div class="info-image">
@@ -348,13 +348,13 @@ var donanimlar = {
         </div>
       `
     },
-    haparlor: {
+    hoparlor: {
       iframeSrc: "https://www.youtube.com/embed/lw-NOwxQ2jw",
-      title: "Haparlör",
+      title: "Hoparlör",
       htmlDoc: "dis-donanimi.html",
       innerHtml: `
           <div class="info-content">
-          <h1>Haparlör</h1>
+          <h1>Hoparlör</h1>
           <p>
           Yine önemli dış donanım birimleri arasında yer alan hoparlörler, bilgisayarların ses giriş ve çıkışlarının yönetimlerinden sorumludurlar.
           <q>Sessiz bir bilgisayar tıpkı sağır bir insana benzer - PCH Atasözü</q>nden yola çıkacak olursak bilgisayarımızda gerçekleştirmiş olduğumuz sesli komutların bize analog ve dijital olarak dönmesi gerekmektedir. Bu işlemleri A'dan Z'ye gerçekleştiren birime hoparlör denmektedir.
@@ -365,12 +365,12 @@ var donanimlar = {
           </div>
         </div>
         <div class="info-image">
-          <img src="imgs/dis-donanim/hoparlor.png" alt="haparlor" />
+          <img src="imgs/dis-donanim/hoparlor.png" alt="hoparlor" />
         </div>
       `
     },
     kasa: {
-      iframeSrc: "https://www.youtube.com/embed/lw-NOwxQ2jw",
+      iframeSrc: "https://www.youtube.com/embed/8y-3R4RbEJw",
       title: "Kasa",
       htmlDoc: "dis-donanimi.html",
       innerHtml: `
@@ -381,7 +381,7 @@ var donanimlar = {
           Kasayı, vücudumuzdaki iskelet olarak düşünebiliriz.
           </p>
           <div class="btn-group-action">
-              <button onclick="bringTopic('haparlor')" class="btn btn-success">&lt; Önceki Birim</button>
+              <button onclick="bringTopic('hoparlor')" class="btn btn-success">&lt; Önceki Birim</button>
               <button onclick="bringTopic('kullaklik')" class="btn btn-success">Sonraki Birim &gt;</button>
           </div>
         </div>
@@ -391,7 +391,7 @@ var donanimlar = {
       `
     },
     kullaklik: {
-      iframeSrc: "https://www.youtube.com/embed/A82Td6XWAQ8",
+      iframeSrc: "https://www.youtube.com/embed/7aLhJr0DT5g",
       title: "Mikrofon ve Kulaklık",
       htmlDoc: "dis-donanimi.html",
       innerHtml: `
@@ -573,10 +573,10 @@ var girisCikis = {
           width="150"
           height="100"
           src="imgs/dis-donanim/hoparlor.png"
-          alt="haparlor"
+          alt="hoparlor"
         />
       </div>
-      <h4>Haparlör</h4>
+      <h4>Hoparlör</h4>
     </div>
     <div class="col-sm-6">
       <div class="image-block text-center">
