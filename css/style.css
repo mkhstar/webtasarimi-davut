@@ -1,9 +1,21 @@
 html {
-  max-width: 200vh;
+  max-width: 300vh;
+}
+
+#topic .small-direction {
+  display: none;
 }
 
 .jumbotron.welcome-screen {
   background-color: white;
+}
+
+.jumbotron.welcome-screen .video-content {
+  display: none;
+}
+
+.jumbotron.welcome-screen .lesson-info-content {
+  display: none;
 }
 
 .jumbotron.welcome-screen .content {
@@ -40,13 +52,51 @@ body .body-content-wrapper header {
   border-radius: 5px;
 }
 
+nav .navbar-item a {
+  position: relative;
+}
+
 nav .navbar-item a.active {
-  background-color: #86d886;
+  background-color: #54a154;
   color: white !important;
 }
 
-header .search-field input {
+nav .navbar-item a:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #89c289;
+  transform-origin: right;
+  transition: width 0.25s ease;
+  z-index: -1;
+}
+
+nav .navbar-item a:hover:after {
+  width: 100%;
+}
+
+
+header .search-field {
   height: 6vh;
+  position: relative;
+}
+
+header .search-field .search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #d6d6d6;
+  color: #133d21;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 1.3em;
+  font-size: bold;
 }
 
 header .search-field .form-group {
@@ -70,7 +120,7 @@ body .body-content-wrapper header .navbar-item a {
   text-decoration: none;
   border: 1px solid #dadada;
   width: 100%;
-  height: 23vh;
+  height: 18.8vh;
 }
 
 body .body-content-wrapper header .navbar-item a h3 {
@@ -91,7 +141,193 @@ body .body-content-wrapper header nav .navbar-item img {
 
 body .body-content-wrapper main {
   flex: 5;
-  align-self: center;
   text-align: center;
+}
+
+/* Lesson Clicked State */
+main.closed .jumbotron.welcome-screen {
+  padding: 10px;
+}
+
+main.closed .jumbotron.welcome-screen .content img {
+  width: 38px;
+  height: 38px;
+}
+
+main.closed .jumbotron.welcome-screen .content img:hover {
+  width: 80px;
+  height: 80px;
+  transition: 0.3s;
+}
+
+main.closed .jumbotron.welcome-screen .content {
+  margin-top: 0;
+  padding: 0;
+  margin-right: 5px;
+  flex: 1;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+main.closed .jumbotron.welcome-screen .video-content {
+  border-radius: 15px;
+  display: block;
+  flex: 1;
+}
+
+main.closed .jumbotron.welcome-screen .video-content iframe {
+  width: 100% !important;
+  height: 100%;
+}
+
+main.closed .jumbotron.welcome-screen h2.display-4,
+main.closed .jumbotron.welcome-screen h5.lead {
+  display: none;
+}
+
+main.closed #topic .small-direction {
+  display: block;
+  text-align: center;
+}
+
+
+main.closed .jumbotron.welcome-screen .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 35vh;
+}
+
+main.closed .jumbotron.welcome-screen .lesson-info-content,
+.giris-cikis-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  height: 60vh;
+  text-align: left;
+  padding: 0 10px;
+  border: 2px solid #61b861;
+  border-radius: 15px;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main.closed .jumbotron.welcome-screen .lesson-info-content .info-content p {
+  line-height: 2.3em;
+}
+
+main.closed .jumbotron.welcome-screen .lesson-info-content .info-image {
+  align-self: center;
+  margin-left: 20px;
+}
+
+main.closed .jumbotron.welcome-screen .lesson-info-content .info-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.easy-autocomplete {
+  width: 100%;
+}
+
+/* Hakkında */
+main.hakkinda {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+main.hakkinda .content-hakkinda {
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+main.hakkinda .social-media a {
+  font-size: 2.5em;
+  padding: 10px;
+  text-decoration: none;
+  color: #36724a;
+}
+
+main.hakkinda .social-media a:hover {
+  color: #133d21;
+  transition: 0.4s;
+}
+
+.user-image .circle {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+
+.info-content .btn-group-action {
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.info-content .btn-group-action button:last-child {
+  float: right;
+  margin-right: 20px;
+}
+
+.giris-cikis-container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.etkinlikler-show {
+  padding: 5px;
+}
+
+.etkinlikler-show .etkinlik-field {
+  padding: 20px;
   margin: auto;
+}
+
+.etkinlikler-show .etkinlik-field button {
+  font-size: 1.5em;
+}
+
+main.closed .etkinlikler-show .etkinlik-field {
+  margin-bottom: 20px;
+  margin: auto;
+  padding: 0 !important;
+}
+
+
+main.closed .etkinlikler-show .etkinlik-field button {
+  font-size: 12px !important;
+}
+
+.container-about {
+  width: 80%;
+  margin: auto;
+}
+
+.site-amaci h3,
+.site-amaci h5,
+.site-amaci p {
+  margin-top: 20px;
+}
+
+.kaynak-links a {
+  display: block;
+}
+
+.kaynak-links a:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.giris-cikis-row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }

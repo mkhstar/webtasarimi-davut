@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/autocomplete.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <title>Dış Donanımı</title>
+</head>
+
+<body>
+  <div class="body-content-wrapper">
+    <header>
+      <div class="search-field">
+        <form autocomplete="off">
+          <div class="form-group">
+            <input type="text" id="search" class="form-control" placeholder="Bileşeni Ara..." />
+            <button class="search-icon"><i class="zmdi zmdi-search"></i></button>
+          </div>
+        </form>
+      </div>
+      <nav>
+        <div class="navbar-item">
+          <a href="index.html" class="navbar-icon">
+            <img src="imgs/motherboard-icon.png" alt="navbar-image" />
+            <h3>İç Donanım Birimleri</h3>
+          </a>
+          <a href="dis-donanimi.html" class="active navbar-icon">
+            <img src="imgs/desktop_computer.png" alt="navbar-image" />
+            <h3>Dış Donanım Birimleri</h3>
+          </a>
+          <a href="giris-cikis.html" class="navbar-icon">
+            <img src="imgs/in-out-icon.png" alt="navbar-image" />
+            <h3>Giriş Çıkış Birimleri</h3>
+          </a>
+          <a href="etkinlikler.html" class="navbar-icon">
+            <img src="imgs/etkinlik.png" alt="navbar-image" />
+            <h3>Etkinlik</h3>
+          </a>
+          <a href="hakkinda.html" class="navbar-icon">
+            <img src="imgs/contact-icon.png" alt="navbar-image" />
+            <h3>Hakkında ve İletişim</h3>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="jumbotron welcome-screen">
+        <h2 class="display-4">Dış Donanım Birimleri</h2>
+        <h5 class="lead">
+          Öğrenmek istediğiniz donanım biriminin üzerine tıklayınız...
+        </h5>
+        <div class="content-wrapper">
+          <div class="content" id="topic" data-topic="disDonanimlar">
+            <div class="row">
+              <div class="col-sm-12 small-direction">
+                <h4>Dış Donanım Birimleri</h4>
+                <h6 class="lead">
+                  Öğrenmek istediğiniz donanım biriminin üzerine tıklayınız...
+                </h6>
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/monitor.png" alt="monitor" title="Monitör" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/fare.png" alt="fare" title="Fare" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/kalvye.png" alt="klavye" title="Klavye" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/yazici.png" alt="yazici" title="Yazıcı ve Tarayıcılar" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/haricidisk.png" alt="hariciDepolama" title="Harici Depolama" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/webcam.png" alt="kamera" title="Kamera" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/hoparlor.png" alt="haparlor" title="Haparlör" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/kasa.png" alt="kasa" title="Kasa" />
+              </div>
+              <div class="col-sm-4 col-titles">
+                <img src="imgs/dis-donanim/kullaklik.png" alt="kullaklik" title="Mikrofon ve Kulaklık" />
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <iframe id="video-iframe" src="https://www.youtube.com/embed/Y99dqEDADQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="lesson-info-content"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/donanimlar.js"></script>
+  <script src="js/autocomplete.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
